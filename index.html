@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+<body>
+    <form>
+        <p>
+            Full name <input type="text" pattern="([A-Za-zА-Яа-яЁё_.-]\s{5,25})" title="only Latin alphabet">             
+        </p>
+        <p>
+            email <input type="email" pattern="(\w[A-Za-z0-9_.-]{3,})@([A-z0-9_.-]{3,}).([A-z]{2,8})" title="It is allowed to enter letters only in the Latin alphabet, numbers, symbols _.-">
+        </p>        
+        <p>
+            password <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="from 8-20 characters with at least one digit, at least one uppercase letter, at least one lowercase, only Latin alphabet">
+        </p>
+        <div>
+            <label>
+                <input type="submit" value="Save">
+            </label>
+        </div>
+    </form>
+    <table border="1" cellpadding="10">
+        <colgroup style="background-color:grey">
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <caption> test table with merged cells</caption>
+            <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red eyes</th>
+            </tr>
+            <tr>
+                <th>height</th>
+                <th>weight</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+            <th>Males</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+            </tr>
+            <tr>
+            <th>Fmales</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
